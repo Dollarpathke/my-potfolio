@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dollarpath Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Dollarpath<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="toggle-container">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Dollarpath</span></h1>
+      <p>A passionate web developer & designer focused on creating clean, modern, and user-friendly experiences.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a creative and detail-oriented developer skilled in front-end and back-end technologies.
+      I love building functional websites with sleek UI and smooth UX. My stack includes HTML, CSS, JavaScript, React, and Node.js.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>Modern responsive portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Project 2">
+        <h3>Airbnb Management System</h3>
+        <p>Full system for managing listings, bookings, and payments with modern UI.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Project 3">
+        <h3>Dashboard Design</h3>
+        <p>Interactive admin dashboard with analytics and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in collaborating or hiring me? Let's connect!</p>
+    <div class="contact-links">
+      <a href="mailto:dollarpath@example.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://github.com/dollarpath" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/dollarpath" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Dollarpath. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeIcon = document.getElementById('theme-icon');
+    themeIcon.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      themeIcon.classList.toggle('fa-sun');
+      themeIcon.classList.toggle('fa-moon');
+    });
+  </script>
+</body>
+</html>
